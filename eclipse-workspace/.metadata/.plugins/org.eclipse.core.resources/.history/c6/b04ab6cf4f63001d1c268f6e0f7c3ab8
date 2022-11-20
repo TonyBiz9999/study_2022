@@ -1,0 +1,22 @@
+package chap03;
+
+public class p01_01_array {
+public static void main(String[] args) {
+//	Khai báo mảng:
+	int [] arrayOne;
+	int arayTwo[];
+//	Khai báo mảng và cấp vùng nhớ:
+	int[]arrayInt = new int[5];
+	arrayInt[0] 		=10;
+	arrayInt[1] 		=10;
+	arrayInt[2]		=10;
+	arrayInt[3] 		=10;
+	arrayInt[4]		 =10;
+	
+	System.out.println(arrayInt[0]);
+	System.out.println(arrayInt[1]);
+	System.out.println(arrayInt[2]);
+	System.out.println(arrayInt[3]);
+	System.out.println(arrayInt[4]);
+}
+}

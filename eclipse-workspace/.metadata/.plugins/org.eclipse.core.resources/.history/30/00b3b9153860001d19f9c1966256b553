@@ -1,0 +1,28 @@
+package chap01.basic;
+import java.util.Scanner;
+
+//1
+//12
+//123
+//1234
+//12345
+public class prac_03_05 {
+public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);    
+	System.out.print("Enter your number :  \n");  
+	int height= sc.nextInt(); 
+	 sc.close();
+	 String shape 	= "";
+	 String record 	= "";
+
+	 for (int i = 1; i <= height; i++) {
+	     String left =(i+" ").repeat(i);
+	     String number = "=".repeat(height - i+1);
+
+	 	record = left + number;
+	 	shape += record + "\n";
+	 }
+	 System.out.println(shape);
+}
+
+}

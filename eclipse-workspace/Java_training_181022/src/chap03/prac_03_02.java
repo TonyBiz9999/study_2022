@@ -1,0 +1,19 @@
+package chap03;
+
+public class prac_03_02 {
+public static void main(String[] args) {
+	int[] arrInt	= {1, 2, 5, 8, 3};
+	int sumEven = 0;
+	int sumOdd  = 0;
+	int sumAll	= 0;
+	for(int i=0; i<arrInt.length; i++) {
+		sumAll+=arrInt[i];
+		if(arrInt[i] % 2 == 0) {
+			sumEven += arrInt[i];
+		}else sumOdd =+arrInt[i];
+	}
+	System.out.println("Tổng phần tử: " + sumAll);
+	System.out.println("Tổng phần tử chẳn: " + sumEven);
+	System.out.println("Tổng phần tử lẻ: " + sumOdd);
+}
+}
